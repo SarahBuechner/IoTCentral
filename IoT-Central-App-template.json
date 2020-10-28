@@ -3,12 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "customerName": {
-      "type": "string",
-      "defaultValue": "sig" 
+      "type": "string" 
     },
     "location": {
       "type": "string",
-      "defaultValue": "europe",
       "allowedValues": [
 	"europe", 
         "unitedstates",
@@ -20,7 +18,6 @@
     },
     "sku": {
       "type": "string",
-      "defaultValue": "ST1",
       "allowedValues": [
         "ST1",
         "ST2"

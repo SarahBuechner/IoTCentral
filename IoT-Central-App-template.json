@@ -3,8 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "customerName": {
-      "type": "string",
-      "defaultValue": "kunde" 
+      "type": "string" 
     },
     "location": {
       "type": "string",

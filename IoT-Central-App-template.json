@@ -8,7 +8,7 @@
     },
     "location": {
       "type": "string",
-      "defaultValue": "europe",
+      "defaultValue": "",
       "allowedValues": [
 	"europe", 
         "unitedstates",
@@ -20,7 +20,7 @@
     },
     "sku": {
       "type": "string",
-      "defaultValue": "ST1",
+      "defaultValue": "",
       "allowedValues": [
         "ST1",
         "ST2"

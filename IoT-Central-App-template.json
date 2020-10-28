@@ -1,0 +1,63 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "customerName": {
+      "type": "string",
+      "defaultValue": "sig" 
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "europe",
+      "allowedValues": [
+	"europe", 
+        "unitedstates",
+        "asiapacific",
+        "australia", 
+        "uk", 
+        "japan"
+      ]
+    },
+    "sku": {
+      "type": "string",
+      "defaultValue": "ST1",
+      "allowedValues": [
+        "ST1",
+        "ST2"
+      ]
+    },
+    "template": {
+      "type": "string",
+      "allowedValues": [
+        "iotc-waste@1.0.0",
+        "iotc-consumption@1.0.0",
+	"iotc-quality@1.0.0",
+	"iotc-meter@1.0.0",
+	"iotc-power@1.0.0",
+	"iotc-logistics@1.0.0",
+	"iotc-inventory@1.0.0"
+      ]
+
+    }
+  },
+  "variables": {
+    "nameResource": "[concat(parameters('customerName'),'-', take(parameters('template'), 10))]",
+    "nameSubdomain": "[take(parameters('template'), 10)]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.IoTCentral/IoTApps",
+      "apiVersion": "2018-09-01",
+      "name": "[variables('nameResource')]",
+      "location": "[parameters('location')]",
+      "sku": {
+        "name": "[parameters('sku')]"
+      },
+      "properties": {
+        "displayName": "[variables('nameResource')]",
+                "subdomain": "[variables('nameResource')]",
+                "template": "[parameters('template')]"
+      }
+    }
+  ]
+}

@@ -4,11 +4,11 @@
   "parameters": {
     "customerName": {
       "type": "string",
-      "defaultValue": "sig" 
+      "defaultValue": "kunde" 
     },
     "location": {
       "type": "string",
-      "defaultValue": "uk",
+      "defaultValue": "europe",
       "allowedValues": [
 	"europe", 
         "unitedstates",

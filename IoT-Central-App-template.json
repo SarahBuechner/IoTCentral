@@ -52,7 +52,7 @@
       },
       "properties": {
         "displayName": "[variables('nameResource')]",
-                "subdomain": "[variables('nameResource')]",
+                "subdomain": "[variables('nameSubdomain')]",
                 "template": "[parameters('template')]"
       }
     }

@@ -5,12 +5,6 @@
 	"customerName": {
             "value": "sig"
         },
-        "resourceName": {
-            "value": "sig-water-consumption"
-        },
-        "subdomain": {
-            "value": "sig-water-consumption"
-        },
         "location": {
             "value": "europe"
         },

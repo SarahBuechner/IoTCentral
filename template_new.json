@@ -32,7 +32,13 @@
 	"meter",
 	"power",
 	"logistics",
-	"inventory"
+	"inventory", 
+	"condition",
+	"distribution",
+	"mfc",
+	"patient",
+	"store",
+	"video-analytics-om"
       ]
 
     }

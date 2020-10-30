@@ -40,7 +40,7 @@
   "variables": {
     "nameResource": "[concat(parameters('customerName'),'-', parameters('template'))]",
     "subDomain": "[concat(parameters('customerName'),'-', parameters('template'), '-', 'sub')]",
-    "template": [concat("iotc-",parameters('template'), "@1.0.0")]
+    "template": "[concat('iotc-',parameters('template'), '@1.0.0')]"
   },
   "resources": [
     {
